@@ -13,7 +13,7 @@ namespace SampleAPI.Controllers
         [HttpGet("/healthy")]
         public IActionResult Get()
         {
-            return Ok("OK");
+            return Ok("Healthy");
         }
     }
 }
