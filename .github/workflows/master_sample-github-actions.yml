@@ -23,8 +23,8 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
-    - name: dotnet publish
-      run: dotnet publish "Sample.API/.Sample.API.csproj" -c Release -o ${{env.DOTNET_ROOT}}/myapp
+    - name: Dotnet publish
+      run: dotnet publish "Sample.API/Sample.API.csproj" -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v1
