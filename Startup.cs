@@ -39,10 +39,10 @@ namespace dotnet_sample_github_actions
                 endpoints.MapControllers();
             });
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Sample Github Actions");
-            });
+            // app.Run(async (context) =>
+            // {
+            //     await context.Response.WriteAsync("Sample Github Actions");
+            // });
         }
     }
 }
