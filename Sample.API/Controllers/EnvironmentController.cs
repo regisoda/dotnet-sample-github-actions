@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
-namespace dotnet_sample_github_actions.Controllers
+namespace SampleAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

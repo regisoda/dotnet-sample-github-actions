@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace dotnet_sample_github_actions
+namespace SampleAPI
 {
     public class Startup
     {
@@ -37,12 +37,11 @@ namespace dotnet_sample_github_actions
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapGet("/", async context =>
+                {
+                    await context.Response.WriteAsync("Sample Github Actions - API");
+                });
             });
-
-            // app.Run(async (context) =>
-            // {
-            //     await context.Response.WriteAsync("Sample Github Actions");
-            // });
         }
     }
 }

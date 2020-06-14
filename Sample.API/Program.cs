@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace dotnet_sample_github_actions
+namespace SampleAPI
 {
     public class Program
     {
